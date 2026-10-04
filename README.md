@@ -16,7 +16,7 @@ Free, at home and at work. No account and no license key.
 - **Views.** Put the sessions for a task side by side and switch between views with a click.
 - **Waiting queue.** Click the waiting count to jump to the session that has waited longest.
 
-Runs on Windows, macOS and Linux.
+Runs on Windows, macOS 12 Monterey or later, and Linux.
 
 To run agents, install Claude Code or the Codex CLI and make sure it's on your PATH. Shells and SSH use what your system already has. For SSH sessions in tmux, tmux has to be installed on the remote machine.
 
@@ -43,7 +43,7 @@ Your agents talk to their own providers under their own terms, not through us.
 
 ## License
 
-Holler Bell is distributed under [its license](https://hollerbell.com/license/). It is not open source.
+Holler Bell is distributed under the [Holler Bell Free License](https://hollerbell.com/license/). It is not open source.
 
 ---
 
