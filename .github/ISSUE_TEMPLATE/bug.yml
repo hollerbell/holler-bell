@@ -28,8 +28,8 @@ body:
     id: version
     attributes:
       label: Holler Bell version
-      description: You'll find it under About in the app.
-      placeholder: "e.g. 1.0.17"
+      description: Copy the heading of the About panel, for example "Holler Bell 1.0.17" (⋯ menu → About Holler Bell).
+      placeholder: "e.g. Holler Bell 1.0.17"
     validations:
       required: true
   - type: input

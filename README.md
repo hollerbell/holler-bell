@@ -1,31 +1,87 @@
-# Holler Bell
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hb-mark-dark.svg">
+    <img src="assets/hb-mark-light.svg" width="72" height="72" alt="">
+  </picture>
+</p>
 
-**All your agents. One window.**
+<h1 align="center">Holler Bell</h1>
 
-Holler Bell is a desktop app for Claude Code, Codex, shells and SSH. When an agent finishes and waits for you, Holler Bell shows you which session it is.
+<p align="center">
+  <strong>All your agents. One window.</strong><br>
+  A desktop app for Claude Code, Codex, shells and SSH.<br>
+  When an agent finishes and waits for you, Holler Bell shows you which session it is.
+</p>
 
-**[Download for Windows, macOS and Linux](https://hollerbell.com/?ref=github#download)**
+<p align="center">
+  <a href="https://hollerbell.com/?ref=github#download"><strong>Download for Windows, macOS and Linux</strong></a><br>
+  Free, at home and at work. No account and no license key.
+</p>
 
-Free, at home and at work. No account and no license key.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/window-dark.png">
+    <img src="assets/window-light.png" width="830" alt="The Holler Bell window: sessions grouped by folder, one of them waiting">
+  </picture>
+</p>
 
-## What it does
+<p align="center">This repository holds release notes and the issue tracker. Holler Bell's source code is not published here.</p>
 
-- **Every session, grouped by folder.** Sessions sit under the folder they run in. SSH sessions show the host they're connected to.
-- **See who's waiting.** The row turns amber and a notification names the session. Working sessions stay quiet.
-- **Resume after a restart.** "Resume all" brings your sessions back. Agents continue their conversations and SSH sessions in tmux reconnect. Plain shells start fresh.
+## Three agents, a shell, an SSH box. Which is waiting for you?
+
+### See who's waiting
+
+A waiting session gets an amber mark and a notification, and the waiting count goes up. Working sessions stay quiet.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/waiting-dark.png">
+  <img src="assets/waiting-light.png" width="830" alt="A waiting session with an amber mark, and the notification that says it is waiting">
+</picture>
+
+### Every session, grouped by folder
+
+Sessions sit under the folder they run in. Collapse the folders you're not working in. SSH sessions show the host they're connected to.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/folders-dark.png">
+  <img src="assets/folders-light.png" width="830" alt="Sessions listed under their folders and SSH hosts">
+</picture>
+
+### Resume after a restart
+
+After a restart, "Resume all" brings your sessions back. Agents continue their conversations and SSH sessions in tmux reconnect. Plain shells start fresh.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/resume-dark.png">
+  <img src="assets/resume-light.png" width="830" alt="After a restart: the list of sessions with the Resume all button">
+</picture>
+
+### Also in the window
+
 - **Views.** Put the sessions for a task side by side and switch between views with a click.
 - **Waiting queue.** Click the waiting count to jump to the session that has waited longest.
+- **Terminal bell.** A program that rings BEL in its terminal marks the session as waiting.
+- **SSH in tmux.** Choose tmux when you open an SSH session, and it survives a dropped connection.
+- **Names that stick.** Name your shells and SSH sessions. The names survive a restart.
 
-Runs on Windows, macOS 12 Monterey or later, and Linux.
+The pictures are drawings of the app, not screenshots. They show session types as the monograms CLD and CDX.
 
-To run agents, install Claude Code or the Codex CLI and make sure it's on your PATH. Shells and SSH use what your system already has. For SSH sessions in tmux, tmux has to be installed on the remote machine.
+## Get started
 
-## What's in this repository
+1. **[Download the installer](https://hollerbell.com/?ref=github#download)** for your system. Holler Bell runs on Windows, macOS 12 Monterey or later, and Linux.
+2. **Install Claude Code or the Codex CLI** and make sure it's on your PATH. Shells and SSH use what your system already has. For SSH sessions in tmux, tmux has to be installed on the remote machine.
+3. **Start your first session.** On the "This machine" card, open the "New" tab, pick a folder and press ▶ on the Claude Code or Codex CLI row.
 
-This repository holds release notes and the issue tracker. Holler Bell's source code is not published here.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/new-dark.png">
+  <img src="assets/new-light.png" width="830" alt="The New tab on the This machine card, with the rows Claude Code and Codex CLI">
+</picture>
 
-- **Releases:** what changed in each version. Installers are on [hollerbell.com](https://hollerbell.com/?ref=github#download), together with their SHA-256 checksums.
-- **Issues:** bug reports and questions. See below.
+## What phones home
+
+Holler Bell runs on your machine. There's no account and no cloud relay, and your terminals never leave your computer. On its own, it contacts us for a single thing: the update check. Details are on the [privacy page](https://hollerbell.com/privacy/).
+
+Your agents talk to their own providers under their own terms, not through us.
 
 ## Report a bug
 
@@ -35,11 +91,13 @@ If you'd rather not report in public, write to [support@hollerbell.com](mailto:s
 
 Replies may come from Bellhop, an automated account of the Holler Bell team that uses an AI assistant; a person on the team is responsible for every reply.
 
-## What phones home
+## Releases
 
-Holler Bell runs on your machine. There's no account and no cloud relay, and your terminals never leave your computer. On its own, it contacts us for a single thing: the update check. Details are on the [privacy page](https://hollerbell.com/privacy/).
+[Releases](https://github.com/hollerbell/holler-bell/releases) say what changed in each version. Installers are on [hollerbell.com](https://hollerbell.com/?ref=github#download), together with their SHA-256 checksums.
 
-Your agents talk to their own providers under their own terms, not through us.
+## Also from us
+
+**[Cache Bell](https://github.com/hollerbell/cache-bell)** is a plugin for Claude Code. It saves your tokens and limits: it stops a long session from spending them on re-sending its whole context after a break. Experimental; its code is public under the MIT license.
 
 ## License
 
