@@ -19,10 +19,7 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/window-dark.png">
-    <img src="assets/window-light.png" width="830" alt="The Holler Bell window: sessions grouped by folder, one of them waiting">
-  </picture>
+  <img src="assets/window-6-dark.png" width="830" alt="The Holler Bell window: the list of sessions on the left, six of them open side by side, and the count of waiting sessions in the header">
 </p>
 
 <p align="center">This repository holds release notes and the issue tracker. Holler Bell's source code is not published here.</p>
@@ -35,7 +32,7 @@ A waiting session gets an amber mark and a notification, and the waiting count g
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/waiting-dark.png">
-  <img src="assets/waiting-light.png" width="830" alt="A waiting session with an amber mark, and the notification that says it is waiting">
+  <img src="assets/waiting-light.png" width="830" alt="Waiting sessions: their rows carry an amber mark, the header counts the ones you have not looked at yet, and one of them is open with its question">
 </picture>
 
 ### Every session, grouped by folder
@@ -44,7 +41,7 @@ Sessions sit under the folder they run in. Collapse the folders you're not worki
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/folders-dark.png">
-  <img src="assets/folders-light.png" width="830" alt="Sessions listed under their folders and SSH hosts">
+  <img src="assets/folders-light.png" width="480" alt="The list of sessions grouped by folder, with SSH sessions under their hosts">
 </picture>
 
 ### Resume after a restart
@@ -53,18 +50,26 @@ After a restart, "Resume all" brings your sessions back. Agents continue their c
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/resume-dark.png">
-  <img src="assets/resume-light.png" width="830" alt="After a restart: the list of sessions with the Resume all button">
+  <img src="assets/resume-light.png" width="520" alt="After a restart: the Restore tab with the Resume all button and the sessions to bring back">
+</picture>
+
+### Views for each task
+
+Put the sessions for a task side by side and switch between views with a click.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/window-2-dark.png">
+  <img src="assets/window-2-light.png" width="830" alt="A view with two sessions side by side; the tabs above them switch to other views">
 </picture>
 
 ### Also in the window
 
-- **Views.** Put the sessions for a task side by side and switch between views with a click.
 - **Waiting queue.** Click the waiting count to jump to the session that has waited longest.
 - **Terminal bell.** A program that rings BEL in its terminal marks the session as waiting.
 - **SSH in tmux.** Choose tmux when you open an SSH session, and it survives a dropped connection.
 - **Names that stick.** Name your shells and SSH sessions. The names survive a restart.
 
-The pictures are drawings of the app, not screenshots. They show session types as the monograms CLD and CDX.
+The screenshots show made-up sessions. Session types appear as the monograms CLD and CDX.
 
 ## Get started
 
@@ -74,7 +79,7 @@ The pictures are drawings of the app, not screenshots. They show session types a
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/new-dark.png">
-  <img src="assets/new-light.png" width="830" alt="The New tab on the This machine card, with the rows Claude Code and Codex CLI">
+  <img src="assets/new-light.png" width="520" alt="The New tab on the This machine card, with the rows Claude Code and Codex CLI">
 </picture>
 
 ## What phones home
