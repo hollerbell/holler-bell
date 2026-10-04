@@ -1,0 +1,23 @@
+name: Question or request
+description: Ask how something works, or tell us what you're missing.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is public. Please leave out tokens, passwords, private code and hostnames.
+
+        Replies may come from Bellhop, an automated account of the Holler Bell team that uses an AI assistant; a person on the team is responsible for every reply.
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like to know or see?
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11, macOS 15.1, Ubuntu 24.04 ..."
+    validations:
+      required: false
