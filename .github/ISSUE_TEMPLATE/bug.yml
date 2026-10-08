@@ -28,8 +28,8 @@ body:
     id: version
     attributes:
       label: Holler Bell version
-      description: Copy the heading of the About panel, for example "Holler Bell 1.0.17" (⋯ menu → About Holler Bell).
-      placeholder: "e.g. Holler Bell 1.0.17"
+      description: Copy the heading of the About panel, for example "Holler Bell 1.0.20" (⋯ menu → About Holler Bell).
+      placeholder: "e.g. Holler Bell 1.0.20"
     validations:
       required: true
   - type: input
